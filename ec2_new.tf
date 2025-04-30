@@ -66,6 +66,7 @@ resource "aws_instance" "my_instance" {
 
  # ami             = "ami-0e35ddab05955cf57" # ubuntu
  ami = var.ec2_ami_id
+ user_data = file("install_nginx.sh")
 
   root_block_device {
     #volume_size = 15
