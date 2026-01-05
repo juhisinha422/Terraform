@@ -1,0 +1,29 @@
+Terraform Variables
+
+Variables allow you to avoid hardcoding values and make configurations reusable.
+
+🔹 Define a Variable
+
+variable "instance_type" {
+ description = "EC2 instance type"
+ type = string
+ default = "t2.micro"
+}
+
+🔹 Use the Variable
+
+instance_type = var.instance_type
+
+🔹 Ways to Assign Values
+✔ terraform.tfvars
+ ✔ Command line (-var)
+ ✔ Environment variables (TF_VAR_name)
+
+📁 terraform.tfvars
+
+instance_type = "t3.medium"
+
+✅ Benefits
+Reusability
+Environment-specific configs
+Cleaner code
