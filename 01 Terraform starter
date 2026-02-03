@@ -1,0 +1,17 @@
+Recommendation for Getting Started with Terraform
+
+1. Begin by familiarizing yourself with Terraform basics.  
+2. Practice creating simple resources such as EC2 instances, S3 buckets, RDS databases, and IAM roles/policies.  
+3. Learn key concepts including:
+   - Dependencies  
+   - Data blocks
+   - Functions 
+   - Conditional expressions  
+   - Declaring variables and outputs
+  
+4. Gradually refactor your resources into modules, then call those modules to provision the same infrastructure.  
+5. Use tfvars files to manage environment-specific configurations:
+   - dev.tfvars for development  
+   - tst.tfvars for testing  
+6. Once comfortable, integrate Terraform with CI/CD pipelines using tools like GitHub, Bitbucket, Jenkins, or GitLab to automate deployments.  
+7. This workflow allows you to showcase your ability to manage infrastructure as code, maintain consistency across environments, and streamline deployments.
