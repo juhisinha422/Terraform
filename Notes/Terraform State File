@@ -1,0 +1,18 @@
+Understanding the Terraform State File 
+
+Terraform uses a state file (terraform.tfstate) to keep track of the real-world resources it manages.
+
+During terraform plan and terraform apply, it compares:
+
+ Desired configuration (.tf files)
+ Actual infrastructure
+
+Why it matters 
+
+• Without the state file, Terraform cannot know what already exists
+
+• Stores resource IDs, attributes, and metadata
+
+• Enables drift detection
+
+• Ensures safe updates
