@@ -1,0 +1,9 @@
+Terraform Core Commands: 
+✅ terraform init
+Initializes the working directory. It downloads provider plugins (like AWS) and sets up backend configuration.
+✅ terraform plan
+Shows the execution plan what resources will be created, updated, or destroyed before applying changes.
+✅ terraform apply
+Executes the plan and provisions infrastructure on the cloud.
+✅ terraform destroy
+Deletes all the resources defined in your configuration.
